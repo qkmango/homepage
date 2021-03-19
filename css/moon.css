@@ -1,0 +1,21 @@
+/* 夜晚暗主题 */
+/* 文本颜色 */
+*,a,case-li{
+	color: white;
+}
+
+.style{
+	border: 2px rgb(45,45,45) solid;
+	background-color: rgba(45,45,45,0.2);
+	border: none;
+}
+
+/* 站点的li项 */
+.site-li-box {
+	border: none;
+}
+
+/* 各ul中的li项 */
+.case-li {
+	border: none;
+}

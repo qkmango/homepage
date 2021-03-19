@@ -1,0 +1,49 @@
+/* 白天亮主题 */
+/* .backgroundimg{
+	display: block;
+} */
+
+.style{
+	border: none;
+	background-color: white;
+}
+
+/* 文本颜色 */
+*,a{
+	color: black;
+}
+
+
+/* 各ul中的li项 */
+.case-li{
+	box-shadow: none;
+}
+
+/* 照片墙photoPage的box */
+.photopage:hover>div.tip-text-box>span.tip-text {
+	background-color: rgba(255,255,255,.7) !important;
+}
+
+/* ==========站点logo颜色=========== */
+.site-ul-box a:nth-child(1) .iconfont{
+	color: #dd1700;
+}
+.site-ul-box a:nth-child(2) .iconfont{
+	color: #3e75c3;
+}
+.site-ul-box a:nth-child(3) .iconfont{
+	color: #888888;
+}
+.site-ul-box a:nth-child(4) .iconfont{
+	color: #ea5d5c;
+}
+.site-ul-box a:nth-child(5) .iconfont{
+	color: #0e87ea;
+}
+.site-ul-box a:nth-child(6) .iconfont{
+	color: #3a3a3a;
+}
+.site-ul-box a:nth-child(7) .iconfont,
+.site-ul-box a:nth-child(8) .iconfont{
+	color: #5178e5;
+}

@@ -1,0 +1,102 @@
+/* 整个键盘区域 */
+.keyaero {
+	width: 875px;
+	height: 300px;
+	font-size: 0px;
+	/* background-color: #bfa; */
+}
+
+/* 所有键盘 */
+.key {
+	display: inline-block;
+	outline: 2px black solid;
+	padding-top: 10px;
+	padding-left: 5px;
+	margin: 5px;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* 1.1 */
+.keyaero>.one-line>.key:first-child {
+	width: 35px;
+}
+
+/* 1.last */
+#backspace {
+	width: 100px;
+}
+
+/* 2.1 */
+#tab {
+	width: 60px;
+}
+/* 2.last */
+#backslash {
+	width: 75px;
+}
+/* 3.1 capsLock */
+#capslock {
+	width: 80px;
+}
+/* 3.last enter */
+#enter {
+	width: 115px;
+}
+/* 4.l shift */
+#shift-first {
+	width: 105px;
+}
+/* 4.last shift */
+#shift-last {
+	width: 150px;
+}
+/* 空格键 */
+#spacing {
+	width: 325px;
+}
+
+/* 鼠标移入的时候设置背景颜色 */
+.key:hover {
+	background-color: orange;
+}
+
+/* 存放小键盘的区域 */
+.key-small-all {
+	padding: 0;
+}
+
+/* 小键盘上 */
+.key-small-top {
+	border-bottom: 1px black solid;
+}
+/* 小键盘下 */
+.key-small-bottom {
+	border-top: 1px black solid;
+}
+/* 放两个小键盘的区域 */
+.key-small-all:hover {
+	background-color: rgba(0,0,0,0);
+}
+
+/* 小键盘 */
+.key-small {
+	margin: 0;
+	height: 25px;
+	width: 50px;
+	padding: 0;
+	outline: none;
+	line-height: 25px;
+}
+
+/* 第五行的直接子元素 */
+.five-line>.key {
+	text-align: center;
+	line-height: 50px;
+	padding: 0;
+}
