@@ -6,6 +6,10 @@
  码云	 https://gitee.com/qkmango
 */
 
+* {
+	font-size: 0;
+}
+
 *::selection{
 	background-color: #000;
 }

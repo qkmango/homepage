@@ -8,6 +8,11 @@
 	background-color: white;
 }
 
+.hover-style:hover {
+	box-shadow: 0 0 2px #868686 !important;
+	background-color: rgba(0,0,0,0) !important;
+}
+
 /* 文本颜色 */
 *,a{
 	color: black;
