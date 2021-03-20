@@ -116,15 +116,14 @@ a {
 /* 盒子样式 */
 .style {
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 6px;
 	font-size: 0;
 }
 
 /* =========顶部导航条============ */
-/* 请从public/css/header.css引入页面的顶部logo条 */
 
 
-/* 黑夜白天模式、照片墙图标 */
+/* 黑夜白天模式 */
 .sun-moon{
 	display: inline-block;
 	float: right;
@@ -208,11 +207,7 @@ a {
 /* 我的站点、常用站点标题提示文字 */
 .offen-use-site>:nth-child(1) {
 	display: inline-block;
-	width: 67%;
-}
-.offen-use-site>:nth-child(2) {
-	display: inline-block;
-	width: 33%;
+	width: 100%;
 }
 
 
@@ -254,7 +249,8 @@ a {
 }
 
 .hover-style:hover {
-	box-shadow: 0 0 4px #c8c8c8;
+	box-shadow: 0 0 2px #c8c8c8;
+	background-color: rgba(0,0,0,.2);
 }
 
 
@@ -285,10 +281,14 @@ a {
 /* 其中一项ul的盒子 */
 .case-ul-box {
 	float: left;
-	width: 244px;
+	width: 330px;
 	height: 200px;
 	display: inline-block;
 	padding: 10px;
+}
+
+.case-ul-box:not(.case-ul-box:last-child) {
+	margin-right: 20px;
 }
 
 /* 每个ul中，多个li的盒子 */
@@ -320,20 +320,6 @@ a {
 .case-li:hover {
 	color: #ff5500;
 }
-
-/* ===============CSDN================ */
-/* .csdn_box {
-	margin: auto;
-	font-size: 0;
-	width: 1030px;
-}
-
-.csdn-rss-list {
-	width: 100%;
-	height: 600px;
-}
- */
-
 
 
 /* ===============底部============== */
