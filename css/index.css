@@ -6,6 +6,17 @@
  码云	 https://gitee.com/qkmango
 */
 
+:root {
+    --green_1:#2ebc4f;
+    --green_2:#6db33f;
+	--blue_1:rgb(41, 151, 255);
+	--blue_2:#0779E4;
+	--orange:#ff5500;
+	--bgcolor:#090724;
+	--footer:#545462;;
+}
+
+
 * {
 	font-size: 0;
 }
@@ -25,7 +36,7 @@ html,body{
 body {
 	flex-direction:column;
 	justify-content:center;
-	background-color: #090724;
+	background-color: var(--bgcolor);
 }
 
 
@@ -58,56 +69,6 @@ body {
 	height: 30px;
 	margin-left: 20px;
 	margin-top: 5px;
-}
-
-
-.title{
-	height: 100%;
-	width: 100%;
-	animation:pageframe 1s;
-	-moz-animation:pageframe 1s;
-	-webkit-animation:pageframe 1s;
-	-o-animation:pageframe 1s;
-}
-@keyframes pageframe {
-	0% {height: 100%;}
-	60% {height: 70%;}
-	100% {height: 100%;}
-}
-@-moz-keyframes pageframe {
-	0% {height: 100%;}
-	60% {height: 70%;}
-	100% {height: 100%;}
-}
-@-webkit-keyframes pageframe {
-	0% {height: 100%;}
-	60% {height: 70%;}
-	100% {height: 100%;}
-}
-
-.title>div{
-	font-size: 50px;
-	font-weight: bold;
-	color: white;
-	line-height: 70px;
-	width: 400px;
-	margin: 15% auto auto auto;
-	animation:moveframe 1s;
-	-moz-animation:moveframe 1s;
-	-webkit-animation:moveframe 1s;
-	-o-animation:moveframe 1s;
-}
-@keyframes moveframe {
-	0% {margin: 25% auto auto auto;}
-	100% {margin: 15% auto auto auto;}
-}
-@-moz-keyframes moveframe {
-	0% {margin: 25% auto auto auto;}
-	100% {margin: 15% auto auto auto;}
-}
-@-webkit-keyframes moveframe {
-	0% {margin: 25% auto auto auto;}
-	100% {margin: 15% auto auto auto;}
 }
 
 
@@ -185,7 +146,7 @@ body {
 }
 .photopage:hover>div.tip-text-box>span.tip-text {
 	background-color: rgba(0,0,0,.7);
-	color: rgb(41, 151, 255);
+	color: var(--green_1);
 }
 
 
@@ -213,10 +174,10 @@ body {
 	display: inline-block;
 	width: 100%;
 	font-size: 16px;
-	color: rgb(41, 151, 255);
+	color: var(--green_1);
 	padding-bottom: 10px;
 	font-weight: 800;
-	border-bottom: 1px #0779E4 solid;
+	border-bottom: 1px var(--green_1) solid;
 }
 
 /* 站点各项的box，ul */
@@ -270,7 +231,6 @@ body {
 
 .case-max-box::after {
 	content: '';
-	/* ::after默认添加的是一个行内元素，手动将其设置为块元素 */
 	display: block;
 	clear: both;
 }
@@ -315,7 +275,7 @@ body {
 }
 
 .case-li:hover {
-	color: #ff5500;
+	color: var(--green_1) ;
 }
 
 
@@ -333,11 +293,11 @@ body {
 
 .describe{
 	width: 80%;
-	color: #000000;
+	color: #000;
 	margin-top: 20px;
 }
 .footer *{
-	color: #545462;
+	color: var(--footer);
 }
 
 .info {
@@ -379,6 +339,29 @@ a,li,footer,form,*{
 	font-family: "microsoft yahei";
 }
 
+
+
+
+/* ============大文字========== */
+.big-quote {
+	height: 100%;
+}
+
+.big-quote>p {
+	font-size: 24px;
+	line-height: 1.5;
+	color: var(--green_2);
+	font-weight: bold;
+	text-align: center;
+}
+
+.big-quote>img {
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 250px;
+	margin-bottom: 20px;
+}
 
 
 

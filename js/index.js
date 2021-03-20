@@ -1,8 +1,5 @@
 window.onload = function() {
 	
-	getOSList();
-	// printLogo();
-	
 	// =========黑夜白天模式===========
 	var flag = false;
 	
@@ -21,8 +18,6 @@ window.onload = function() {
 			sun_moon_css.href='css/sun.css';
 		}
 	}
-	
-	
 	
 	//==============组合键跳转网页、百度回车键监听================
 	var d = -1;
@@ -47,6 +42,10 @@ window.onload = function() {
 		c = -1;
 		j = -1;
 	}
+	
+	
+	getOSList();
+	// printLogo();
 	
 }
 
@@ -89,17 +88,31 @@ function printLogo() {
 
 // 我的开源项目列表
 function getOSList() {
+	
+	let token = '';
+	
+	$.ajax({
+		url:'resource/token.json',
+		type:'get',
+		async:false,
+		dataType:'json',
+		success:function(data) {
+			token = data.access_token;
+		}
+	})
+	
 	$.ajax({
 		url:'https://api.github.com/users/qkmango/repos',
+		data:{
+			access_token:token
+		},
 		type:'get',
 		dataType:'json',
 		success:function(data) {
 			let html = '';
-			
 			$.each(data,function(i,n) {
 				html += '<a class="case-li hover-style style" href="'+n.html_url+'" target="_blank">'+n.name+'</a>'
 			})
-			
 			$('#os-box').html(html)
 		}
 	})
