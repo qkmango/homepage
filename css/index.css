@@ -244,9 +244,14 @@ body {
 	padding: 10px;
 }
 
-.case-ul-box:not(.case-ul-box:last-child) {
+/* .case-ul-box:not(.case-ul-box:last-child) {
+	margin-right: 20px;
+} */
+.case-ul-box:nth-child(1),
+.case-ul-box:nth-child(2) {
 	margin-right: 20px;
 }
+
 
 /* 每个ul中，多个li的盒子 */
 .case-li-box {
