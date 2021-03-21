@@ -1,0 +1,22 @@
+/* ===================滚动条================== */
+
+/*定义了滚动条整体样式；*/ 
+::-webkit-scrollbar{
+	width: 6px !important;
+}
+		
+/*定义了滚动条滑块的样式*/
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background-color: rgba(131, 131, 131, 0.2);
+}
+
+/*定义了滚动条滑块鼠标移入样式*/
+::-webkit-scrollbar-thumb:hover {
+	/* background-color: rgba(131, 131, 131, 0.4); */
+	background-color: var(--green_3);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}

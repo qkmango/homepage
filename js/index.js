@@ -82,10 +82,6 @@ function printLogo() {
 }
 
 
-
-
-
-
 // 我的开源项目列表
 function getOSList() {
 	
@@ -103,9 +99,7 @@ function getOSList() {
 	
 	$.ajax({
 		url:'https://api.github.com/users/qkmango/repos',
-		data:{
-			access_token:token
-		},
+		headers: {'Authorization': token},
 		type:'get',
 		dataType:'json',
 		success:function(data) {
