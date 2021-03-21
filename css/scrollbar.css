@@ -2,12 +2,13 @@
 
 /*定义了滚动条整体样式；*/ 
 ::-webkit-scrollbar{
-	width: 6px !important;
+	width: 8px;
+	height: 8px;
 }
 		
 /*定义了滚动条滑块的样式*/
 ::-webkit-scrollbar-thumb {
-	border-radius: 3px;
+	border-radius: 4px;
 	background-color: rgba(131, 131, 131, 0.2);
 }
 
