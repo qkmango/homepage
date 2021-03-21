@@ -45,7 +45,7 @@ window.onload = function() {
 	
 	
 	getOSList();
-	// printLogo();
+	printLogo();
 	
 }
 
@@ -77,8 +77,8 @@ function printLogo() {
 	logo+="        |::|    |              \\::|   |                 /:::/    /              /:::/    /              /:::/    /             \\::::/    /              \\::/____/        \n";
 	logo+="        |::|____|               \\:|   |                 \\::/    /               \\::/    /               \\::/    /               \\::/____/                ~~              \n";
 	logo+="         ~~                      \\|___|                  \\/____/                 \\/____/                 \\/____/                                                         ";
-	console.log("%c"+logo,"color:#fff;background:#2ebc4f");
-	console.log("%c@芒果小洛 qkmango  http://qkmango.cn","font-size:14px;color:#2ebc4f;font-weight:bold;");
+	console.log("%c"+logo,"color:#fff;background:#1aaf5d");
+	console.log("%c@芒果小洛 qkmango  http://qkmango.cn","font-size:14px;color:#1aaf5d;font-weight:bold;");
 }
 
 
