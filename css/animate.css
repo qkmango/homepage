@@ -98,7 +98,7 @@
   }
   80% {
     transform: translate(20px, 0) scale(1);
-	color: var(--green_3);
+	color: var(--theme_color);
   }
 
   100% {

@@ -15,7 +15,7 @@
 /*定义了滚动条滑块鼠标移入样式*/
 ::-webkit-scrollbar-thumb:hover {
 	/* background-color: rgba(131, 131, 131, 0.4); */
-	background-color: var(--green_3);
+	background-color: var(--theme_color);
 }
 
 ::-webkit-scrollbar-track {

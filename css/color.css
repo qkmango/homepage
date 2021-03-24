@@ -2,9 +2,12 @@
     --green_1:#2ebc4f;
     --green_2:#6db33f;
     --green_3:#1aaf5d;
+    --green_4:#42b983;
 	--blue_1:rgb(41, 151, 255);
 	--blue_2:#0779E4;
 	--orange:#ff5500;
 	--bgcolor:#090724;
-	--footer:#545462;;
+	--footer:#545462;
+	
+	--theme_color:var(--green_4);
 }

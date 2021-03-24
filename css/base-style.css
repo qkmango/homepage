@@ -5,7 +5,7 @@
 }
 
 *::selection{
-	background-color: var(--green_3);
+	background-color: var(--theme_color);
 	color: #fff;
 }
 
