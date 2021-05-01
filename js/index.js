@@ -6,16 +6,20 @@ window.onload = function() {
 	var switch_btn = document.getElementById('switch-btn');
 	var switch_img = document.getElementById('switch-img');
 	var sun_moon_css = document.getElementById('sun-moon-css');
+	var backgroundimg = document.getElementsByClassName('backgroundimg')[0];
+	
 	
 	switch_btn.onclick = function() {
 		if(flag) {
 			flag = false;
 			switch_img.innerText = '\ue624';
 			sun_moon_css.href='css/moon.css';
+			backgroundimg.src = '/homepage/imgs/background/moon.svg';
 		}else{
 			flag = true;
 			switch_img.innerText = '\ue603';
 			sun_moon_css.href='css/sun.css';
+			backgroundimg.src = '/homepage/imgs/background/sun.svg';
 		}
 	}
 	
