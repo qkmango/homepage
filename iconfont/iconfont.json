@@ -6,18 +6,11 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "12310217",
-      "name": "photo_on_rectangle",
-      "font_class": "photo_on_rectangle",
-      "unicode": "e875",
-      "unicode_decimal": 59509
-    },
-    {
-      "icon_id": "14055556",
-      "name": "百度",
-      "font_class": "baidu",
-      "unicode": "e612",
-      "unicode_decimal": 58898
+      "icon_id": "7647363",
+      "name": "link",
+      "font_class": "link1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
     },
     {
       "icon_id": "14720823",

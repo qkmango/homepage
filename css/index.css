@@ -288,10 +288,13 @@
 	align-items: center;
 }
 
+.big-quote * {
+	color: var(--theme_color);
+}
 .big-quote p {
 	font-size: 24px;
 	line-height: 1.5;
-	color: var(--theme_color);
+	/* color: var(--theme_color); */
 	font-weight: bold;
 	text-align: center;
 }
@@ -303,7 +306,7 @@
 }
 
 .big-quote img,
-.big-quote svg{
+.big-quote>div>svg{
 	height: 50px;
 	margin: 0 auto;
 	display: block;
@@ -314,7 +317,32 @@
 	fill:#000;
 }
 
+#yiyan {
+	margin-top: 100px;
+	max-width: 400px;
+}
 
+#yiyan>a {
+	display: inline-block;
+	word-wrap: break-word;
+	text-align: center;
+	line-height: 23px;
+	width: 100%;
+}
+
+
+.link {
+	color: transparent;
+	text-decoration: none;
+}
+
+#yiyan>a>span:hover {
+	color: white;
+}
+
+#yiyan>a:hover .link {
+	color: white;
+}
 
 
 

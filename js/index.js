@@ -20,32 +20,28 @@ window.onload = function() {
 	}
 	
 	//==============组合键跳转网页、百度回车键监听================
-	var d = -1;
-	var c = -1;
-	var j = -1;
+	var z = -1;
+	var y = -1;
 	document.onkeydown = function(event) {
-		if(event.keyCode==68) {
-			d = 68;
+		if(event.keyCode==90) {
+			z = 90;
 		}
-		if(event.keyCode==67) {
-			c = 67;
+		if(event.keyCode==89) {
+			y = 89;
 		}
-		if(event.keyCode==74) {
-			j = 74;
-		}
-		if(d==68 && c==67 && j==74) {
-			window.location = "./case/love/"
+		if(z==90 && y==89) {
+			window.location = "./case/2/"
 		}
 	}
 	document.onkeyup = function() {
-		d = -1;
-		c = -1;
-		j = -1;
+		z = -1;
+		y = -1;
 	}
 	
 	
+	getYiyan();
 	getOSList();
-	printLogo();
+	// printLogo();
 	
 }
 
@@ -111,3 +107,44 @@ function getOSList() {
 		}
 	})
 }
+
+/**
+ * 获取一言列表
+ */
+function getYiyan() {
+	$.ajax({
+		url:'resource/yiyan.json',
+		type:'get',
+		dataType:'json',
+		success:function(data) {
+			
+			let arr = data["arr"];
+			let random = randomNum(0,arr.length-1);
+			let context = arr[random]["context"];
+			let link = arr[random]["link"];
+			
+			$("#yiyan .context").text(context)
+			$("#yiyan a").attr("href",link);
+		}
+	})
+}
+
+
+/**
+ * 生成随机整数
+ * @param {Object} minNum 最小值
+ * @param {Object} maxNum 最大值
+ */
+function randomNum(minNum,maxNum){ 
+	switch(arguments.length){ 
+		case 1:
+			return parseInt(Math.random()*minNum+1,10);
+		break;
+		case 2:
+			return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10);
+		break;
+			default:
+				return 0;
+			break;
+	} 
+} 
