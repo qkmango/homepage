@@ -3,25 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<title>qkmango 芒果小洛</title>
+		
+		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/theme.js"></script>
+		
+		<link rel="icon" href="imgs/mango_logo/icon.png" sizes="32x32">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/clearfix.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/color.css" />
 		<link rel="stylesheet" type="text/css" href="css/base-style.css" />
-		<link rel="stylesheet" type="text/css" href="css/moon.css" id="sun-moon-css"/>
+		<link rel="stylesheet" type="text/css" href="css/moon.css" id="theme-css"/>
+		<script>loadCssTheme();</script>
+		<link rel="stylesheet" type="text/css" href="css/animate_moon.css" id="animate" />
+		<script>loadAnimateTheme();</script>
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 		<link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
-		<link rel="icon" href="imgs/mango_logo/icon.png" sizes="32x32">
-		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
 	</head>
 	<body>
 		<div class="animate">
+			<div style="height:140px">
+				
 			<span>你</span><span>好</span><span>！</span><br>
 			<span>欢</span><span>迎</span><span>来</span><span>到</span><span>我</span><span>的</span><span>主</span><span>页</span>
+			</div>
 		</div>
 		<!-- 背景图 -->
-		<img src="imgs/background/moon.svg" class="backgroundimg" />
+		<img id="backgroundimg" class="backgroundimg" />
+		<script>
+			loadBgImgTheme();
+		</script>
 		<!-- 顶部导航条 -->
 		<nav class="top-nav" id="top-nav">
 			<a href="#"><img src="imgs/mango_logo/logo_color.png" /></a>
@@ -30,6 +42,9 @@
 				<span class="iconfont" id="switch-img" title="主题切换">&#xe624;</span>
 			</div>
 		</nav>
+		<script>
+			loadChangeThemeBtn();
+		</script>
 		
 		<div class="photopage style">
 			<div class="tip-text-box">

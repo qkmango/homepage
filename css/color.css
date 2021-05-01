@@ -6,7 +6,8 @@
 	--blue_1:rgb(41, 151, 255);
 	--blue_2:#0779E4;
 	--orange:#ff5500;
-	--bgcolor:#090724;
+	--bgcolor_moon:#090724;
+	--bgcolor_sun:#f6f8fa;
 	--footer:#545462;
 	
 	--theme_color:var(--green_4);

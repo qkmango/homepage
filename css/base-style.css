@@ -2,6 +2,9 @@
 
 * {
 	font-size: 0;
+	transition: background-color .5s;
+	transition: color .3s;
+	/* transition: all 2s; */
 }
 
 *::selection{
@@ -20,7 +23,7 @@ html,body{
 body {
 	flex-direction:column;
 	justify-content:center;
-	background-color: var(--bgcolor);
+	background-color: var(--bgcolor_moon);
 }
 
 a,li,footer,form,*{

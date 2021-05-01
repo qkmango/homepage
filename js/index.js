@@ -1,52 +1,30 @@
 window.onload = function() {
 	
 	// =========黑夜白天模式===========
-	var flag = false;
+	var theme_flag = theme=='moon'?false:true;
 	
 	var switch_btn = document.getElementById('switch-btn');
 	var switch_img = document.getElementById('switch-img');
-	var sun_moon_css = document.getElementById('sun-moon-css');
+	var theme_css = document.getElementById('theme-css');
 	var backgroundimg = document.getElementsByClassName('backgroundimg')[0];
 	
 	
 	switch_btn.onclick = function() {
-		if(flag) {
-			flag = false;
-			switch_img.innerText = '\ue624';
-			sun_moon_css.href='css/moon.css';
-			backgroundimg.src = '/homepage/imgs/background/moon.svg';
+		if(theme_flag) {
+			theme_flag = !theme_flag;
+			setTheme('moon');
 		}else{
-			flag = true;
-			switch_img.innerText = '\ue603';
-			sun_moon_css.href='css/sun.css';
-			backgroundimg.src = '/homepage/imgs/background/sun.svg';
+			theme_flag = !theme_flag;
+			setTheme('sun');
 		}
-	}
-	
-	//==============组合键跳转网页、百度回车键监听================
-	var z = -1;
-	var y = -1;
-	document.onkeydown = function(event) {
-		if(event.keyCode==90) {
-			z = 90;
-		}
-		if(event.keyCode==89) {
-			y = 89;
-		}
-		if(z==90 && y==89) {
-			window.location = "./case/2/"
-		}
-	}
-	document.onkeyup = function() {
-		z = -1;
-		y = -1;
+		loadThemeAll();
 	}
 	
 	
-	getYiyan();
 	getOSList();
+	toLovePage();
+	getYiyan();
 	// printLogo();
-	
 }
 
 
@@ -152,3 +130,27 @@ function randomNum(minNum,maxNum){
 			break;
 	} 
 } 
+
+
+/**
+ * 组合键跳转网页、百度回车键监听
+ */
+function toLovePage() {
+	var z = -1;
+	var y = -1;
+	document.onkeydown = function(event) {
+		if(event.keyCode==90) {
+			z = 90;
+		}
+		if(event.keyCode==89) {
+			y = 89;
+		}
+		if(z==90 && y==89) {
+			window.location = "./case/2/"
+		}
+	}
+	document.onkeyup = function() {
+		z = -1;
+		y = -1;
+	}
+}
