@@ -43,7 +43,8 @@ function loadThemeAll() {
 }
 
 function setTheme(theme) {
-	$.cookie('theme',theme);
+	//cookie有效期365天
+	$.cookie('theme',theme,{expires:365});
 }
 
 function reloadThemeCookie() {
