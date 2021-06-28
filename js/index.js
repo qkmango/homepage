@@ -81,6 +81,7 @@ function getOSList() {
 		type:'get',
 		dataType:'json',
 		success:function(data) {
+			data.reverse();
 			let html = '';
 			$.each(data,function(i,n) {
 				html += '<a class="case-li hover-style style" href="'+n.html_url+'" target="_blank">'+n.name+'</a>'
