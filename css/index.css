@@ -278,6 +278,16 @@
 	margin-bottom: 10px;
 }
 
+.footer a:hover  {
+	color: var(--theme_color);
+	text-decoration: underline;
+}
+
+.footer a:hover span{
+	color: var(--theme_color);
+}
+
+
 
 
 
