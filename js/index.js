@@ -62,31 +62,29 @@ function printLogo() {
 
 // 我的开源项目列表
 function getOSList() {
-	
 	let token = '';
-	
-	$.ajax({
-		url:'resource/token.json',
-		type:'get',
-		async:false,
+	ajax({
+		url:'/resource/token.json',
 		dataType:'json',
 		success:function(data) {
 			token = data.access_token;
 		}
 	})
-	
-	$.ajax({
+
+	ajax({
 		url:'https://api.github.com/users/qkmango/repos',
 		headers: {'Authorization': token},
-		type:'get',
 		dataType:'json',
 		success:function(data) {
 			data.reverse();
 			let html = '';
-			$.each(data,function(i,n) {
-				html += '<a class="case-li hover-style style" href="'+n.html_url+'" target="_blank">'+n.name+'</a>'
+			each({
+				data:data,
+				eachfun:function(index,item) {
+					html += '<a class="case-li hover-style style" href="'+item.html_url+'" target="_blank">'+item.name+'</a>'
+				}
 			})
-			$('#os-box').html(html)
+			document.querySelector("#os-box").innerHTML = html;
 		}
 	})
 }
@@ -95,9 +93,8 @@ function getOSList() {
  * 获取一言列表
  */
 function getYiyan() {
-	$.ajax({
+	ajax({
 		url:'resource/yiyan.json',
-		type:'get',
 		dataType:'json',
 		success:function(data) {
 			
@@ -105,9 +102,9 @@ function getYiyan() {
 			let random = randomNum(0,arr.length-1);
 			let context = arr[random]["context"];
 			let link = arr[random]["link"];
-			
-			$("#yiyan .context").text(context)
-			$("#yiyan a").attr("href",link);
+
+			document.querySelector('#yiyan .context').innerText = context;
+			document.querySelector('#yiyan a').href = link;
 		}
 	})
 }
@@ -122,13 +119,10 @@ function randomNum(minNum,maxNum){
 	switch(arguments.length){ 
 		case 1:
 			return parseInt(Math.random()*minNum+1,10);
-		break;
 		case 2:
 			return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10);
-		break;
-			default:
-				return 0;
-			break;
+		default:
+			return 0;
 	} 
 } 
 
@@ -137,21 +131,62 @@ function randomNum(minNum,maxNum){
  * 组合键跳转网页、百度回车键监听
  */
 function toLovePage() {
-	var z = -1;
-	var y = -1;
+	let w = -1;
+	let y = -1;
+	let x = -1;
 	document.onkeydown = function(event) {
-		if(event.keyCode==90) {
-			z = 90;
+		if(event.keyCode==87) {
+			w = 87;
 		}
 		if(event.keyCode==89) {
 			y = 89;
 		}
-		if(z==90 && y==89) {
+		if(event.keyCode==88) {
+			x = 88;
+		}
+		if(w==87 && y==89 && x==88) {
 			window.location = "./page/2/"
 		}
 	}
 	document.onkeyup = function() {
-		z = -1;
+		w = -1;
 		y = -1;
+		x = -1;
+	}
+}
+
+
+		
+
+// ajax
+function ajax({url,type='GET',dataType,async=true,success=function(res){}}) {
+	var xhr;
+	if (window.XMLHttpRequest) {
+		xhr = new XMLHttpRequest();
+	} else {
+		xhr = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				let obj = xhr.responseText;
+				if(dataType == 'json') {
+					obj = JSON.parse(obj);
+				}
+				success(obj);
+			}
+		}
+	}
+	xhr.open(type,url,async);
+	xhr.send();
+}
+
+
+
+function each({data,eachfun=function(index,item){}}) {
+	for(let i=0;i<data.length;i++) {
+		let item = data[i];
+		eachfun(i,item);
 	}
 }
