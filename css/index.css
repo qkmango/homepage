@@ -355,6 +355,12 @@
 }
 
 
+#love:hover {
+	color: white;
+	background-color: deeppink;
+}
+
+
 
 /* ===============字体图标================= */
 @font-face {
