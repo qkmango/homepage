@@ -145,7 +145,7 @@ function toLovePage() {
 			x = 88;
 		}
 		if(w==87 && y==89 && x==88) {
-			window.location = "./page/2/"
+			window.location = "./page/love/"
 		}
 	}
 	document.onkeyup = function() {
