@@ -63,7 +63,8 @@ function printLogo() {
 // 我的开源项目列表
 function getOSList() {
 	ajax({
-		url:'https://gitee.com/api/v5/users/qkmango/repos',
+		//按照更新时间排序
+		url:'https://gitee.com/api/v5/users/qkmango/repos?sort=updated',
 		dataType:'json',
 		success:function(data) {
 			// data.reverse();
