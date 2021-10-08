@@ -64,7 +64,7 @@ function printLogo() {
 function getOSList() {
 	let token = '';
 	ajax({
-		url:'/resource/token.json',
+		url:'resource/token.json',
 		dataType:'json',
 		success:function(data) {
 			token = data.access_token;
