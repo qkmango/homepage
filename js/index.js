@@ -62,27 +62,17 @@ function printLogo() {
 
 // 我的开源项目列表
 function getOSList() {
-	// let token = '';
-	// ajax({
-	// 	url:'resource/token.json',
-	// 	dataType:'json',
-	// 	success:function(data) {
-	// 		token = data.access_token;
-	// 		console.log(token)
-	// 	}
-	// })
-
 	ajax({
-		url:'https://api.github.com/users/qkmango/repos',
-		// headers: {'Authorization': ''},
+		url:'https://gitee.com/api/v5/users/qkmango/repos',
 		dataType:'json',
 		success:function(data) {
-			data.reverse();
+			// data.reverse();
 			let html = '';
+			let url_header = 'https://gitee.com/qkmango/';
 			each({
 				data:data,
 				eachfun:function(index,item) {
-					html += '<a class="case-li hover-style style" href="'+item.html_url+'" target="_blank">'+item.name+'</a>'
+					html += '<a class="case-li hover-style style" href="'+item.assigner.html_url+'/'+item.name+'" target="_blank">'+item.name+'</a>'
 				}
 			})
 			document.querySelector("#os-box").innerHTML = html;
