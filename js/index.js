@@ -62,18 +62,19 @@ function printLogo() {
 
 // 我的开源项目列表
 function getOSList() {
-	let token = '';
-	ajax({
-		url:'resource/token.json',
-		dataType:'json',
-		success:function(data) {
-			token = data.access_token;
-		}
-	})
+	// let token = '';
+	// ajax({
+	// 	url:'resource/token.json',
+	// 	dataType:'json',
+	// 	success:function(data) {
+	// 		token = data.access_token;
+	// 		console.log(token)
+	// 	}
+	// })
 
 	ajax({
 		url:'https://api.github.com/users/qkmango/repos',
-		headers: {'Authorization': token},
+		// headers: {'Authorization': ''},
 		dataType:'json',
 		success:function(data) {
 			data.reverse();
