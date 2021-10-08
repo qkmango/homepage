@@ -72,7 +72,7 @@ function getOSList() {
 			each({
 				data:data,
 				eachfun:function(index,item) {
-					html += '<a class="case-li hover-style style" href="'+item.assigner.html_url+'/'+item.name+'" target="_blank">'+item.name+'</a>'
+					html += '<a class="case-li hover-style style" href="'+item.assigner.html_url+'/'+item.path+'" target="_blank">'+item.name+'</a>'
 				}
 			})
 			document.querySelector("#os-box").innerHTML = html;
