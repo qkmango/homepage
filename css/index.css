@@ -21,7 +21,19 @@
 	top: 0;
 	left: 0;
 	z-index: 2;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 100%;
+	transition: 0.4s;
+	
+	/* background-image: url(../test/imgs/国庆-05.svg);
+	background-color: transparent; */
 }
+
+/* .top-nav:hover{
+	height: 100px;
+} */
 
 .top-nav>a>img {
 	height: 30px;
