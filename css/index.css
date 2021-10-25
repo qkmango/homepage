@@ -209,14 +209,13 @@
 /* 其中一项ul的盒子 */
 .case-ul-box {
 	float: left;
-	width: 330px;
+	width: 505px;
 	height: 200px;
 	display: inline-block;
 	padding: 10px;
 }
 
-.case-ul-box:nth-child(1),
-.case-ul-box:nth-child(2) {
+.case-ul-box:nth-child(1) {
 	margin-right: 20px;
 }
 
