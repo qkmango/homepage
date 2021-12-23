@@ -10,6 +10,17 @@
 		<title>Christmas🎄</title>
 		<link rel="stylesheet" href="./style.css">
 		<style>
+			#emoji{
+				display: inline-block;
+				position: absolute;
+				font-size: 200px;
+				right: 0px;
+				transform:rotate(30deg);
+				opacity: 0.5;
+			}
+		</style>
+		
+		<style>
 			canvas {
 				display: block;
 				position: relative;
@@ -42,6 +53,7 @@
 		<script src="confetti.js"></script>
 	</head>
 	<body>
+		<div id="emoji"></div>
 		<a href="https://qkmango.gitee.io/homepage/" id="homepage">👋🏠🔗芒果小洛的主页</a>
 		<canvas id="canvas" width="1920" height="950"></canvas>
 	
@@ -239,8 +251,30 @@
 
 
 <script type="text/javascript">
+	var emoji = "🎅,🤩,😘,😋,😛,😜,🤪,😝,🎉,🎁,✨,🎄".split(',');
+	var emojiElem =  document.querySelector('#emoji');
+	
+	var emojiIndex = -1;
+	
+	function setEmoji() {
+		let randomNum;
+		while(true) {
+			randomNum = parseInt(Math.random()*(emoji.length));
+			if(randomNum != emojiIndex) {
+				break;
+			}
+		}
+		emojiElem.innerText = emoji[randomNum];
+		console.log(randomNum);
+	}
+	
+	emojiElem.onclick = function() {
+		setEmoji();
+	}
+	
 	window.onload = function() {
+		setEmoji();
 		alert("圣诞节快乐🤗");
-		alert("这是送给你的圣诞树🎄");
+		alert("🎅这是送给你的圣诞树🎄");
 	}
 </script>
