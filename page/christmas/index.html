@@ -268,13 +268,17 @@
 		console.log(randomNum);
 	}
 	
-	emojiElem.onclick = function() {
+	// emojiElem.onclick = function() {
+	// 	setEmoji();
+	// }
+	
+	document.querySelector('body').onclick = function() {
 		setEmoji();
 	}
 	
 	window.onload = function() {
 		setEmoji();
-		alert("圣诞节快乐🤗");
-		alert("🎅这是送给你的圣诞树🎄");
+		// alert("圣诞节快乐🤗");
+		// alert("🎅这是送给你的圣诞树🎄");
 	}
 </script>
