@@ -9,16 +9,6 @@
 		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 		<title>Christmas🎄</title>
 		<link rel="stylesheet" href="./style.css">
-		<style>
-			#emoji{
-				display: inline-block;
-				position: absolute;
-				font-size: 200px;
-				right: 0px;
-				transform:rotate(30deg);
-				opacity: 0.5;
-			}
-		</style>
 		
 		<style>
 			canvas {
@@ -28,6 +18,15 @@
 				pointer-events: none;
 				position: fixed;
 				top: 0;
+			}
+			
+			#emoji{
+				display: inline-block;
+				position: absolute;
+				font-size: 200px;
+				right: 0px;
+				transform:rotate(30deg);
+				opacity: 0.5;
 			}
 	
 			#text {
@@ -268,17 +267,13 @@
 		console.log(randomNum);
 	}
 	
-	// emojiElem.onclick = function() {
-	// 	setEmoji();
-	// }
-	
 	document.querySelector('body').onclick = function() {
 		setEmoji();
 	}
 	
 	window.onload = function() {
 		setEmoji();
-		// alert("圣诞节快乐🤗");
-		// alert("🎅这是送给你的圣诞树🎄");
+		alert("圣诞节快乐🤗");
+		alert("🎅这是送给你的圣诞树🎄");
 	}
 </script>
