@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<title>Christmas🎄</title>
+		<link rel="stylesheet" href="./style.css">
+		<style>
+			canvas {
+				display: block;
+				position: relative;
+				zindex: 1;
+				pointer-events: none;
+				position: fixed;
+				top: 0;
+			}
+	
+			#text {
+				font-size: 100px;
+				color: deeppink;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 10px;
+				text-align: center;
+			}
+	
+			#homepage {
+				color: white;
+				text-decoration: none;
+				background-color: #42b983;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: 32px;
+			}
+		</style>
+		<link type="text/css" rel="stylesheet" charset="UTF-8" href="./translateelement.css">
+		<script src="confetti.js"></script>
+	</head>
+	<body>
+		<a href="https://qkmango.gitee.io/homepage/" id="homepage">👋🏠🔗芒果小洛的主页</a>
+		<canvas id="canvas" width="1920" height="950"></canvas>
+	
+		<ul class="bgg">
+			<li class="sphere"></li>
+		</ul>
+		<ul class="tree">
+			<li class="top-star"></li>
+			<li class="top">
+				<ul class="tree-pts">
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+				</ul>
+			</li>
+			<li class="middle first">
+				<ul class="tree-pts">
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+				</ul>
+			</li>
+			<li class="middle second">
+				<ul class="tree-pts">
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+				</ul>
+			</li>
+			<li class="middle third">
+				<ul class="tree-pts">
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+				</ul>
+			</li>
+			<li class="bottom outer">
+				<ul class="tree-pts">
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts left"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+					<li class="pts right"></li>
+				</ul>
+			</li>
+			<li class="stem">
+				<ul class="tree-stem">
+					<li class="stem"></li>
+					<li class="gift g1"></li>
+					<li class="gift g2"></li>
+					<li class="gift g3"></li>
+					<li class="gift g4"></li>
+					<li class="gift g5"></li>
+					<li class="gift g6"></li>
+					<li class="gift g7"></li>
+					<li class="gift g8"></li>
+					<li class="gift g9"></li>
+					<li class="shadow"></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="toys">
+			<li class="star"></li>
+			<li class="ball b1"></li>
+			<li class="ball b2"></li>
+			<li class="ball b3"></li>
+			<li class="ball b4"></li>
+			<li class="ball b5"></li>
+			<li class="ball b6"></li>
+			<li class="ball b7"></li>
+			<li class="ball b8"></li>
+			<li class="ball b9"></li>
+			<li class="ball b10"></li>
+			<li class="ball b11"></li>
+			<li class="ball b12"></li>
+			<li class="ball b13"></li>
+			<li class="ball b14"></li>
+			<li class="ball b15"></li>
+			<li class="ball b16"></li>
+			<li class="ball b17"></li>
+			<li class="ball b18"></li>
+			<li class="ball b19"></li>
+			<li class="ball b20"></li>
+			<li class="light l1"></li>
+			<li class="light l2"></li>
+			<li class="light l3"></li>
+			<li class="light l4"></li>
+			<li class="light l5"></li>
+			<li class="light l6"></li>
+			<li class="light l7"></li>
+			<li class="light l8"></li>
+			<li class="light l9"></li>
+			<li class="light l10"></li>
+			<li class="light l11"></li>
+			<li class="light l12"></li>
+			<li class="light l13"></li>
+			<li class="light l14"></li>
+			<li class="light l15"></li>
+			<li class="light l16"></li>
+			<li class="light l17"></li>
+			<li class="light l18"></li>
+			<li class="light l19"></li>
+			<li class="light l20"></li>
+			<li class="light l21"></li>
+			<li class="light l22"></li>
+			<li class="light l23"></li>
+			<li class="light l24"></li>
+			<li class="light l25"></li>
+		</ul>
+		<div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+			<div class="top" style="padding: 8px; float: left; width: 100%;">
+				<h1 class="title gray">Original text</h1>
+			</div>
+			<div class="middle" style="padding: 8px;">
+				<div class="original-text"></div>
+			</div>
+			<div class="bottom" style="padding: 8px;">
+				<div class="activity-links"><span class="activity-link">Contribute a better translation</span><span
+						class="activity-link"></span></div>
+				<div class="started-activity-container">
+					<hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+					<div class="activity-root"></div>
+				</div>
+			</div>
+			<div class="status-message" style="display: none;"></div>
+		</div>
+		<div class="goog-te-spinner-pos">
+			<div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner"
+					width="96px" height="96px" viewBox="0 0 66 66">
+					<circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33"
+						cy="33" r="30"></circle>
+				</svg></div>
+		</div>
+		<p id="text">聖誕快樂🎄</p>
+	</body>
+</html>
+
+
+<script type="text/javascript">
+	window.onload = function() {
+		alert("圣诞节快乐🤗");
+		alert("这是送给你的圣诞树🎄");
+	}
+</script>
