@@ -9,7 +9,7 @@
 		<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 		<title>Christmas🎄</title>
 		<link rel="stylesheet" href="./style.css">
-		
+
 		<style>
 			canvas {
 				display: block;
@@ -19,43 +19,66 @@
 				position: fixed;
 				top: 0;
 			}
-			
-			#emoji{
+
+			#emoji {
 				display: inline-block;
 				position: absolute;
 				font-size: 200px;
 				right: 0px;
-				transform:rotate(30deg);
+				transform: rotate(30deg);
 				opacity: 0.5;
 			}
-	
+			
 			#text {
-				font-size: 100px;
-				color: deeppink;
 				position: absolute;
 				left: 0;
 				right: 0;
 				bottom: 10px;
 				text-align: center;
 			}
-	
+			
+			#text p {
+				font-size: 100px;
+				color: deeppink;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 70px;
+				margin-bottom: 20px;
+			}
+			
 			#homepage {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 100;
+			}
+			
+			#homepage a {
+				display: block;
+				text-align: center;
+				margin: 0 auto;
 				color: white;
-				text-decoration: none;
-				background-color: #42b983;
 				padding: 5px;
 				border-radius: 5px;
-				font-size: 32px;
+				font-size: 36px;
+				z-index: 100;
+				line-height: 100px;
+			}
+			#homepage img {
+				height: 32px;
+				border-radius: 50%;
 			}
 		</style>
+		
 		<link type="text/css" rel="stylesheet" charset="UTF-8" href="./translateelement.css">
 		<script src="confetti.js"></script>
 	</head>
 	<body>
 		<div id="emoji"></div>
-		<a href="https://qkmango.gitee.io/homepage/" id="homepage">👋🏠🔗芒果小洛的主页</a>
 		<canvas id="canvas" width="1920" height="950"></canvas>
-	
+
 		<ul class="bgg">
 			<li class="sphere"></li>
 		</ul>
@@ -244,33 +267,48 @@
 						cy="33" r="30"></circle>
 				</svg></div>
 		</div>
-		<p id="text">聖誕快樂🎄</p>
+
+		<div id="text">
+			<p>聖誕快樂🎄</p>
+		</div>
+		
+		<div id="homepage">
+			<a href="https://qkmango.gitee.io/homepage/"><img src="header.jpg" /> 👋🏠🔗芒果小洛的主页 qkmango.cn</a>
+		</div>
+		
+
+		
+
 	</body>
 </html>
 
 
 <script type="text/javascript">
 	var emoji = "🎅,🤩,😘,😋,😛,😜,🤪,😝,🎉,🎁,✨,🎄".split(',');
-	var emojiElem =  document.querySelector('#emoji');
-	
+	var emojiElem = document.querySelector('#emoji');
+
 	var emojiIndex = -1;
-	
+
 	function setEmoji() {
 		let randomNum;
-		while(true) {
-			randomNum = parseInt(Math.random()*(emoji.length));
-			if(randomNum != emojiIndex) {
+		while (true) {
+			randomNum = parseInt(Math.random() * (emoji.length));
+			if (randomNum != emojiIndex) {
 				break;
 			}
 		}
 		emojiElem.innerText = emoji[randomNum];
 		console.log(randomNum);
 	}
-	
+
 	document.querySelector('body').onclick = function() {
 		setEmoji();
 	}
 	
+	document.querySelector('#homepage').onclick = function() {
+		window.location.href = 'https://qkmango.gitee.io/homepage/'
+	}
+
 	window.onload = function() {
 		setEmoji();
 		alert("圣诞节快乐🤗");
