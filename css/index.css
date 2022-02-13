@@ -366,10 +366,10 @@
 }
 
 
-/* #love:hover {
-	color: white;
+.xin:hover {
+	color: white !important;
 	background-color: deeppink;
-} */
+}
 
 
 

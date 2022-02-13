@@ -19,6 +19,9 @@
 				color: #666666
 			}
 			-->
+			#go {
+				cursor:pointer;
+			}
 		</style>
 	</head>
 	<body>
@@ -59,7 +62,7 @@
 				<div id="clock-box">
 					小鑫<span class="STYLE1">与</span> 芒果小洛<span class="STYLE1">已经相识了</span>
 					<div id="clock"></div>
-					<div id="go" onclick="window.location.href='../1/'">♥️️我们一起过七夕吧~ 🔗点击</div>
+					<div id="go" onclick="window.location.href='./qixi/'">♥️️我们一起过七夕吧~ 🔗点击</div>
 				</div>
 				<canvas id="canvas" width="1100" height="680"></canvas>
 			</div>
@@ -207,7 +210,7 @@
 
 				var textAnimate = eval(Jscex.compile("async", function() {
 					var together = new Date();
-					together.setFullYear(2021, 07, -4); //时间年月日
+					together.setFullYear(2021, 07, -4); //时间年月日 2021,7,27
 					together.setHours(0); //小时	
 					together.setMinutes(29); //分钟
 					together.setSeconds(0); //秒前一位

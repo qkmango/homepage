@@ -49,10 +49,15 @@
 			<div class="tip-text-box">
 				<span class="tip-text">School</span>
 			</div>
-			<a><img src="imgs/header_img.jpg" /></a>
+			<a><img src="" id="header_img" /></a>
+			<!-- 随机图片 -->
+			<script>
+				let x = 0;
+				let y = 1;
+				var randomNum = Math.round(Math.random()*(y-x)+x);
+				document.getElementById('header_img').src = 'imgs/header_img/'+randomNum+'.jpg';
+			</script>
 		</div>
-		
-		
 		
 		<!-- 我的站点 -->
 		<div class="offen-use-site style">
@@ -84,6 +89,10 @@
 				<a class="site-li-box style hover-style" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=yvj68-P__fj6_PuKu7vkqaWn" target="_blank">
 					<span class="iconfont">&#xe62c;</span>
 					<span>邮箱</span>
+				</a>
+				<a class="site-li-box style hover-style" href="https://www.douyin.com/user/MS4wLjABAAAAcgLke9dr8MiKOlFHoKCKGxHUyzKvXJ6d_3E983dL4Gc" target="_blank">
+					<span class="iconfont">&#xe66e;</span>
+					<span>抖音</span>
 				</a>
 			</ul>
 		</div>
@@ -163,10 +172,11 @@
 					<p>如果你感兴趣或者你也在学习Java，那么可以找我一起学习哦~</p>
 					<p>
 						<a href="http://qkmango.cn" target="_blank"><span class="iconfont">&#xe600;</span>个人主页 qkmango.cn</a><br />
-						<a href="page/aboutme.html?resume" target="_blank"><span class="iconfont">&#xe600;</span>我的简历 Resume</a><br />
-						<a href="page/aboutme.html" target="_blank"><span class="iconfont">&#xe600;</span>关于我的自我介绍 ABOUT ME</a><br />
-						<!-- <a href="page/love/" target="_blank" id="love"><span class="iconfont">&#xe600;</span>to 小鑫：祝我有一天能和你相逢</a> -->
+						<a href="page/aboutme.html?resume" target="_blank"><span class="iconfont">&#xe600;</span>我的简历 Resume</a>
+						<a href="page/aboutme.html" target="_blank"><span class="iconfont">&#xe600;</span>自我介绍 ABOUT ME</a><br />
+						<a href="page/love/" target="_blank" class="xin"><span class="iconfont">&#xe600;</span>希望有一天能和你相逢</a><br />
 						<a href="page/christmas/" target="_blank"><span class="iconfont">&#xe600;</span>圣诞树</a>
+						<a href="page/fireworks/" target="_blank" id="fireworks" class="xin"><span class="iconfont">&#xe600;</span>给小鑫的烟花</a>
 					</p>
 				</div>
 				<div class="describe">
