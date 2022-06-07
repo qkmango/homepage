@@ -1,4 +1,4 @@
-## 关于我
+## 简历
 
 **张嗣龙👦**
 
@@ -10,7 +10,7 @@
 
 - 🔗 [qkmango.cn](http://qkmango.cn)（个人主页）
 
-- 🎂 2000-11 男 175 60
+- 🎂 2000-11
 
 - Gitee：[https://gitee.com/qkmango](https://gitee.com/qkmango)
 - CSDN：[https://blog.csdn.net/qq_42179997](https://blog.csdn.net/qq_42179997)
@@ -21,9 +21,6 @@
 - 💻 主要为JavaWeb方向
 - 📝 经常写CSDN博客进行记录学习和心得
 - ⚡ 在 Gitee 和 Github 分享自己学习中的小项目
-- 😜 简简单单，不抽烟喝酒，性格贼棒
-- 😭 20年了不知道女生的手到底软不软
-- 📷 平时喜欢拍风景照，还不错，做我女朋友😉，我天天给你拍好看的照片
 
 ## 教育经历
 
@@ -107,13 +104,3 @@
 - SpringBoot快速搭建项目（学习中）
 
 喜欢在学习的时候进行笔记的记录，到现在也记录了很多的笔记，都会分享在CSDN上
-
-![image-20210702200735338](aboutme\image-20210702200735338.png)
-
-
-
-## 爱拍照
-
-经常会拿着相机去拍一些照片，或者拿着手机随手记录
-
-![6](aboutme\6.png)![7](aboutme\7.jpg)![8](aboutme\8.jpg)![2](aboutme\2.jpg)![4](aboutme\4.png)![1](aboutme\1.jpg)![9](aboutme\9.JPG)![5](aboutme\5.png)
