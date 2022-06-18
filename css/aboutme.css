@@ -3,7 +3,8 @@ html {overflow-x: initial !important;}
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 body {
-	padding: 10px 20% !important;
+	/* padding: 10px 20% !important; */
+	padding: 10px 20%;
 	margin: 10px auto;
 }
 img {

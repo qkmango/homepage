@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>qkmango 芒果小洛</title>
+		<script type="text/javascript">
+			const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+			const isForce = /\?force/.test(window.location.href);
+			if (!isMobile && !isForce) {
+				window.location.href = '../index.html';
+			}
+		</script>
+		<base target="_blank">
+		<link rel="icon" href="../imgs/mango_logo/icon.png" sizes="32x32">
+		<link rel="stylesheet" type="text/css" href="../css/color.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/clearfix.css" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/m_style.css" />
+	</head>
+	<body>
+
+		<!-- 顶部导航栏 -->
+		<div id="top_nav">
+			<img src="../imgs/mango_logo/logo_color.png" />
+		</div>
+
+		<!-- 欢迎文字和头像 -->
+		<div id="welcome_box">
+			<img src="../imgs/head.jpg" />
+			<p id="welcome_title">👋Hi~<br />欢迎来到我的主页</p>
+		</div>
+
+		<!-- 图片 -->
+		<div id="header_img_box">
+			<img src="" id="header_img" />
+		</div>
+		<!-- 随机图片 -->
+		<script>
+			let x = 0;
+			let y = 1;
+			var randomNum = Math.round(Math.random() * (y - x) + x);
+			document.getElementById('header_img').src = '../imgs/header_img/m' + randomNum + '.jpg';
+		</script>
+
+		<!-- 我的站点 -->
+		<div id="my_web">
+			<div class="my_web_item_box left_box_in_line csdn">
+				<span class="iconfont">&#xe638;</span>
+				<div class="introduce">
+					<a href="https://blog.csdn.net/qq_42179997">CSDN<span class="iconfont">&#xe600;</span></a>
+					<p>分享博客</p>
+				</div>
+			</div>
+			<div class="my_web_item_box github">
+				<span class="iconfont">&#xea0b;</span>
+				<div class="introduce">
+					<a href="https://github.com/qkmango/">GitHub<span class="iconfont">&#xe600;</span></a>
+					<p>代码分享</p>
+				</div>
+			</div>
+
+			<div class="my_web_item_box left_box_in_line gitee">
+				<span class="iconfont">&#xe686;</span>
+				<div class="introduce">
+					<a href="https://gitee.com/qkmango">Gitee<span class="iconfont">&#xe600;</span></a>
+					<p>代码分享</p>
+				</div>
+			</div>
+			<div class="my_web_item_box weibo">
+				<span class="iconfont">&#xe73c;</span>
+				<div class="introduce">
+					<a href="https://weibo.com/u/5925552385">微博<span class="iconfont">&#xe600;</span></a>
+					<p>随便发发</p>
+				</div>
+			</div>
+
+			<div class="my_web_item_box left_box_in_line zhihu">
+				<span class="iconfont">&#xe635;</span>
+				<div class="introduce">
+					<a href="https://www.zhihu.com/people/mang-guo-xiao-luo-44-5">知乎<span
+							class="iconfont">&#xe600;</span></a>
+					<p>随便看看</p>
+				</div>
+			</div>
+			<div class="my_web_item_box email">
+				<span class="iconfont">&#xe62c;</span>
+				<div class="introduce">
+					<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=yvj68-P__fj6_PuKu7vkqaWn">邮箱<span
+							class="iconfont">&#xe600;</span></a>
+					<p>给我发邮件吧</p>
+				</div>
+			</div>
+
+			<div class="my_web_item_box left_box_in_line douyin">
+				<span class="iconfont">&#xe66e;</span>
+				<div class="introduce">
+					<a href="https://www.douyin.com/user/MS4wLjABAAAAcgLke9dr8MiKOlFHoKCKGxHUyzKvXJ6d_3E983dL4Gc">抖音<span
+							class="iconfont">&#xe600;</span></a>
+					<p>快来看~</p>
+				</div>
+			</div>
+			<div class="my_web_item_box xhs">
+				<span class="iconfont">&#xe617;</span>
+				<div class="introduce">
+					<a href="https://www.xiaohongshu.com/user/profile/620a5d3a0000000010009416">小红书<span
+							class="iconfont">&#xe600;</span></a>
+					<p>记录一下吧</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 一言 -->
+		<a id="yiyan" href="index.html"><span class="iconfont">&#xe600;</span><span id="yiyan_content">我是圣诞老人：由于疫情进入中国需要隔离，所以我已进入国内，为防止袜子中放错礼物，女生们请把穿袜子腿照发我</span></a>
+
+		<!-- 页脚footer -->
+		<div id="footer">
+			<p id="tell">如果你感兴趣或者你也在学习Java，<br />那么可以找我一起学习哦~</p>
+			<p id="page_link">
+				<a href="http://qkmango.cn" target="_blank"><span class="iconfont">&#xe600;</span>个人主页
+					qkmango.cn</a><br />
+				<a href="../index.html?force" target="_blank"><span class="iconfont">&#xe600;</span>电脑端</a>
+				<a href="#?force" target="_blank"><span class="iconfont">&#xe600;</span>手机端</a><br />
+				<a href="../page/resume.html" target="_blank"><span class="iconfont">&#xe600;</span>我的简历 Resume</a>
+				<a href="../page/aboutme.html" target="_blank"><span class="iconfont">&#xe600;</span>自我介绍 ABOUT
+					ME</a><br />
+				<a href="../page/love/" target="_blank" class="xin"><span
+						class="iconfont">&#xe600;</span>希望有一天能和你相逢</a><br />
+				<a href="../page/christmas/" target="_blank"><span class="iconfont">&#xe600;</span>圣诞树</a>
+				<a href="../page/fireworks/" target="_blank" id="fireworks" class="xin"><span
+						class="iconfont">&#xe600;</span>给小鑫的烟花</a>
+			</p>
+
+			<div id="school_link">
+				<span>我的高中 <a href="http://210.45.32.7/xiweb/fz/"><span
+							class="iconfont">&#xe600;</span>阜阳师范大学附属中学</a></span>
+				<p>@安：大爱附中的小小校园，别人总问你们学校这么小为什么总能培养出很多很多德才兼备的孩子，别人不懂得，但是我们肯定知道，我们拥有的是认真负责的老师，我们有温柔体贴的校长</p>
+				<span>我的大学 <a href="https://www.axhu.edu.cn/"><span class="iconfont">&#xe600;</span>安徽新华学院</a></span>
+				<p>再说一遍，我不会修电脑，我是安徽新华学院的学生，不是新华电脑的学生啊！</p>
+			</div>
+
+			<div id="describe">
+				<span>qkmango.cn 版权所有</span>
+				<a href="https://beian.miit.gov.cn/"><span class="iconfont">&#xe600;</span>皖ICP备20002642号-2</a>
+				<span>HomePage</span>
+			</div>
+
+		</div>
+
+	</body>
+</html>
+<script src="../js/utils.js"></script>
+<script type="text/javascript">
+	// 顶部nav背景色
+	let nav = document.getElementById('top_nav');
+	window.addEventListener('scroll', () => {
+		let top = window.scrollY || window.pageYOffset;
+		if (top >= 120) {
+			// nav.style.backgroundColor = 'transparent';
+			nav.style.backgroundColor = '#0004';
+		} else {
+			nav.style.backgroundColor = '#000';
+		}
+	})
+	
+	
+	// 一言
+	ajax({
+		url:'../resource/yiyan.json',
+		dataType:'json',
+		success:function(data) {
+			let arr = data["arr"];
+			let random = randomNum(0,arr.length-1);
+			let context = arr[random]["context"];
+			let link = arr[random]["link"];
+	
+			document.querySelector('#yiyan_content').innerText = context;
+			document.querySelector('#yiyan').href = link;
+		}
+	})
+</script>

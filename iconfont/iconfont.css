@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 1947596 */
-  src: url('iconfont.woff2?t=1644743316741') format('woff2'),
-       url('iconfont.woff?t=1644743316741') format('woff'),
-       url('iconfont.ttf?t=1644743316741') format('truetype');
+  src: url('iconfont.woff2?t=1655481970975') format('woff2'),
+       url('iconfont.woff?t=1655481970975') format('woff'),
+       url('iconfont.ttf?t=1655481970975') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiaqiangban:before {
+  content: "\e617";
 }
 
 .icon-douyin:before {

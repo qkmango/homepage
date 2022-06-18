@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18564907",
+      "name": "加强版 小红书",
+      "font_class": "jiaqiangban",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
       "icon_id": "14110286",
       "name": "抖音",
       "font_class": "douyin",

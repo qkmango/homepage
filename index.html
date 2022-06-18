@@ -3,7 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>qkmango 芒果小洛</title>
-		
+		<script type="text/javascript">
+			const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+			const isForce = /\?force/.test(window.location.href);
+			if(isMobile && !isForce) {
+				window.location.href = 'm/';
+			}
+		</script>
 		<script type="text/javascript" src="js/cookie.js"></script>
 		<script type="text/javascript" src="js/theme.js"></script>
 		
@@ -94,6 +100,10 @@
 					<span class="iconfont">&#xe66e;</span>
 					<span>抖音</span>
 				</a>
+				<a class="site-li-box style hover-style" href="https://www.xiaohongshu.com/user/profile/620a5d3a0000000010009416" target="_blank">
+					<span class="iconfont">&#xe617;</span>
+					<span>小红书</span>
+				</a>
 			</ul>
 		</div>
 	
@@ -171,7 +181,9 @@
 				<div class="describe">
 					<p>如果你感兴趣或者你也在学习Java，那么可以找我一起学习哦~</p>
 					<p>
-						<a href="http://qkmango.cn" target="_blank"><span class="iconfont">&#xe600;</span>个人主页 qkmango.cn</a><br />
+						<a href="http://qkmango.cn" target="_blank"><span class="iconfont">&#xe600;</span>个人主页 qkmango.cn</a>
+						<a href="../index.html?force" target="_blank"><span class="iconfont">&#xe600;</span>电脑端</a>
+						<a href="#?force" target="_blank"><span class="iconfont">&#xe600;</span>手机端</a><br />
 						<a href="page/resume.html" target="_blank"><span class="iconfont">&#xe600;</span>我的简历 Resume</a>
 						<a href="page/aboutme.html" target="_blank"><span class="iconfont">&#xe600;</span>自我介绍 ABOUT ME</a><br />
 						<a href="page/love/" target="_blank" class="xin"><span class="iconfont">&#xe600;</span>希望有一天能和你相逢</a><br />
@@ -194,6 +206,7 @@
 		</footer>
 		
 		<!-- 引入index.js文件 -->
+		<script src="js/utils.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>

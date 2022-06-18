@@ -126,3 +126,11 @@
 </body>
 
 </html>
+<!-- 判断是手机端还是电脑端 -->
+<script type="text/javascript">
+	const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+	if (isMobile) {
+		document.getElementsByTagName('body')[0].style.padding = '50px';
+		document.getElementsByTagName('html')[0].style.fontSize = '40px';
+	}
+</script>
