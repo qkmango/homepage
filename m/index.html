@@ -78,8 +78,7 @@
 			<div class="my_web_item_box left_box_in_line zhihu">
 				<span class="iconfont">&#xe635;</span>
 				<div class="introduce">
-					<a href="https://www.zhihu.com/people/qkmango">知乎<span
-							class="iconfont">&#xe600;</span></a>
+					<a href="https://www.zhihu.com/people/qkmango">知乎<span class="iconfont">&#xe600;</span></a>
 					<p>随便看看</p>
 				</div>
 			</div>
@@ -111,9 +110,11 @@
 		</div>
 
 		<!-- 一言 -->
-		<a id="yiyan" href="index.html"><span class="iconfont">&#xe8db;</span><span class="iconfont">&#xe600;</span><span id="yiyan_content">我是圣诞老人：由于疫情进入中国需要隔离，所以我已进入国内，为防止袜子中放错礼物，女生们请把穿袜子腿照发我</span></a>
+		<a id="yiyan" href="index.html"><span class="iconfont">&#xe8db;</span><span
+				class="iconfont">&#xe600;</span><span
+				id="yiyan_content">我是圣诞老人：由于疫情进入中国需要隔离，所以我已进入国内，为防止袜子中放错礼物，女生们请把穿袜子腿照发我</span></a>
 
-	
+
 		<!-- 页脚footer -->
 		<div id="footer">
 			<p id="tell">如果你感兴趣或者你也在学习Java，<br />那么可以找我一起学习哦~</p>
@@ -130,6 +131,7 @@
 				<a href="../page/christmas/" target="_blank"><span class="iconfont">&#xe600;</span>圣诞树</a>
 				<a href="../page/fireworks/" target="_blank" id="fireworks" class="xin"><span
 						class="iconfont">&#xe600;</span>烟花</a>
+				<a href="../page/love/" target="_blank"><span class="iconfont">&#xe600;</span>爱心</a>
 			</p>
 
 			<div id="school_link">
@@ -164,34 +166,34 @@
 			nav.style.backgroundColor = 'transparent';
 		}
 	})
-	
-	
+
+
 	// 一言
 	ajax({
-		url:'../resource/yiyan.json',
-		dataType:'json',
-		success:function(data) {
+		url: '../resource/yiyan.json',
+		dataType: 'json',
+		success: function(data) {
 			let arr = data["arr"];
-			let random = randomNum(0,arr.length-1);
+			let random = randomNum(0, arr.length - 1);
 			let context = arr[random]["context"];
 			let link = arr[random]["link"];
-	
+
 			document.querySelector('#yiyan_content').innerText = context;
 			document.querySelector('#yiyan').href = link;
 		}
 	})
-	
-	
+
+
 	// 点击更改欢迎页背景图
 	let is_cloud_source = false;
 	let welcome_box = document.getElementById('welcome_box');
 	welcome_box.onclick = function() {
-		if(is_cloud_source) {
+		if (is_cloud_source) {
 			welcome_box.style.backgroundImage = 'url("../imgs/header_img/cloud.jpg")'
 		} else {
 			welcome_box.style.backgroundImage = 'url("../imgs/header_img/cloud_source.jpg")'
 		}
-		
+
 		is_cloud_source = !is_cloud_source;
 	}
 </script>
