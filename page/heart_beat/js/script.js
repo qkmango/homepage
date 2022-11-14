@@ -42,7 +42,7 @@ let originHeart = null;
 
 // OBJ加载器
 new THREE.OBJLoader().load(
-  "https://assets.codepen.io/127738/heart_2.obj",
+  "heart_2.obj",
   (obj) => {
     heart = obj.children[0];
     heart.geometry.rotateX(-Math.PI * 0.5);
