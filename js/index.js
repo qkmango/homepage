@@ -109,27 +109,22 @@ function getYiyan() {
  * 组合键跳转网页、百度回车键监听
  */
 function toLovePage() {
-	let w = -1;
+	let z = -1;
 	let y = -1;
-	let x = -1;
 	document.onkeydown = function(event) {
-		if(event.keyCode==87) {
-			w = 87;
+		if(event.keyCode==90) {
+			z = 90;
 		}
 		if(event.keyCode==89) {
 			y = 89;
 		}
-		if(event.keyCode==88) {
-			x = 88;
-		}
-		if(w==87 && y==89 && x==88) {
+		if(z==90 && y==89) {
 			window.location = "./page/love/"
 		}
 	}
 	document.onkeyup = function() {
-		w = -1;
+		z = -1;
 		y = -1;
-		x = -1;
 	}
 }
 
