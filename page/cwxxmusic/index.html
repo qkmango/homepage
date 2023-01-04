@@ -288,9 +288,6 @@
 				</button>
 			</div><!-- /view--single -->
 		</main>
-		<div style="display:none" id="musicLoadTag">
-			
-		</div>
 		<script>
 
 			const musics = [
@@ -355,10 +352,8 @@
 
 			let catalogue = document.querySelector('#catalogue');
 			let player = document.querySelector('#player');
-			let musicLoadTag = document.querySelector('#musicLoadTag');
 			let catalogueHtml = '';
 			let playerHtml = '';
-			let musicLoadTagHtml = '';
 
 			musics.forEach(function(item,index,array) {
 				catalogueHtml += `<li class="grid__item">
@@ -384,12 +379,10 @@
 								<h3 class="title title--single">${item.name}</h3>
 								<span class="year year--single">${item.year}</span>
 							</div>`;
-				musicLoadTagHtml += `<audio src="./${item.path}"></audio>`;
 			})
 
 			catalogue.innerHTML = catalogueHtml;
 			player.innerHTML =  playerHtml+player.innerHTML;
-			musicLoadTag.innerHTML =  musicLoadTagHtml;
 
 
 		</script>
