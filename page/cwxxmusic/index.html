@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../../imgs/mango_logo/icon.png" sizes="32x32">
 		<title>钢琴曲</title>
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -287,6 +288,9 @@
 				</button>
 			</div><!-- /view--single -->
 		</main>
+		<div style="display:none" id="musicLoadTag">
+			
+		</div>
 		<script>
 
 			const musics = [
@@ -351,8 +355,10 @@
 
 			let catalogue = document.querySelector('#catalogue');
 			let player = document.querySelector('#player');
+			let musicLoadTag = document.querySelector('#musicLoadTag');
 			let catalogueHtml = '';
 			let playerHtml = '';
+			let musicLoadTagHtml = '';
 
 			musics.forEach(function(item,index,array) {
 				catalogueHtml += `<li class="grid__item">
@@ -373,15 +379,17 @@
 								<div class="img-wrap img-wrap--single">
 									<img class="img img--single" src="${item.cover}" alt="${item.name}" />
 								</div>
-								<span class="number">${index}<span class="number__total">${array.length}</span></span>
+								<span class="number">${index+1}<span class="number__total">${array.length}</span></span>
 								<h2 class="artist artist--single">${item.artist}</h2>
 								<h3 class="title title--single">${item.name}</h3>
 								<span class="year year--single">${item.year}</span>
 							</div>`;
+				musicLoadTagHtml += `<audio src="./${item.path}"></audio>`;
 			})
 
 			catalogue.innerHTML = catalogueHtml;
 			player.innerHTML =  playerHtml+player.innerHTML;
+			musicLoadTag.innerHTML =  musicLoadTagHtml;
 
 
 		</script>
