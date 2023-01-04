@@ -347,6 +347,13 @@
 					path:'mp3/遇.mp3',
 					elemId:'y',
 					year:'2021'
+				},{
+					artist:'醋王小鑫',
+					cover:'img/01.jpg',
+					name:'七里香',
+					path:'mp3/七里香.mp3',
+					elemId:'qlx',
+					year:'2023'
 				}
 			]
 
@@ -375,8 +382,8 @@
 									<img class="img img--single" src="${item.cover}" alt="${item.name}" />
 								</div>
 								<span class="number">${index+1}<span class="number__total">${array.length}</span></span>
-								<h2 class="artist artist--single">${item.artist}</h2>
-								<h3 class="title title--single">${item.name}</h3>
+								<h2 class="artist artist--single">${item.name}</h2>
+								<h3 class="title title--single">${item.artist}</h3>
 								<span class="year year--single">${item.year}</span>
 							</div>`;
 			})
