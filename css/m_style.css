@@ -306,6 +306,6 @@ body {
 #footer a:hover>.iconfont {
 	text-decoration: underline;
 	/* color: var(--green_3); */
-	color: #fff;
-	font-weight: bold;
+	color: var(--green_4);;
+	/* font-weight: bold; */
 }
